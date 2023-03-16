@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>basic :: Layout Test</title>
+<meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400&display=swap">
+<style>
+body, ul, ol, p, h1, h2, h3, h4, h5, h6, dl, dt, dd, table, th, td {
+	margin: 0;
+	padding: 0;
+}
+body {
+	line-height: 1;
+	font-family: "Open Sans", "Noto Sans KR", sans-serif;
+	font-size: 1em;
+	color: #000;
+}
+ul {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+	color: #000;
+}
+img {
+	vertical-align: top;
+}
+.wrapper{
+	margin: 0 auto;
+	width: 1360;
+	height: 138px;
+}
+#header{
+
+}
+#header .top{
+	margin: 0 auto;
+	width: 1360px;
+	height: 55px;
+	border-bottom: 1px solid #e1e1e1;
+}
+#header .top .utils{
+	float:right;
+}
+#header .top .utils .sign_in{
+	float:left;
+	padding-right: 10px;
+	line-height: 55px;
+	border-right: 1px solid #e1e1e1;
+}
+#header .top .utils .search{
+	float:left;
+	padding: 10px 0 0 10px;
+}
+#header .menu{
+	margin: 0 auto;
+	width: 1360px;
+	height: 83px;
+}
+#header .menu .logo{
+	margin-top: 13px;
+	float: left;
+}
+#gnb{
+	float: right;
+}
+#gnb li{
+	margin-top: 30px;
+	display: inline-block;
+}
+#gnb li a{
+	line-height: 21px;
+	padding: 13px;
+}
+</style>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header id="header">
+			<div class="top"><!-- margin 0 auto / width / height / border-bottom  -->
+				<!-- <div class="top_inner"> -->
+					<div class="utils"><!-- float right -->
+						<div class="sign_in"><a href="">Sign In</a></div><!-- float left -->
+						<div class="search"><a href=""><img src="images/btn_search.png" alt="search button"></a></div><!-- float left -->
+					</div>
+				<!-- </div> -->
+			</div>
+			<div class="menu"><!-- margin 0 auto / width / height -->
+				<div class="logo"><h1 id="logo"><a href=""><img src="images/logo.png" alt="logo"></a></h1></div><!-- float left -->
+				<nav id="gnb"><!-- float right -->
+					<ul>         
+						<li><a href="">ABOUT</a></li><!-- display inline-block -->
+						<li><a href="">DOWNLOADS</a></li>
+						<li><a href=""> DOCUMENTATION </a></li>
+						<li><a href="">COMMUNITY </a></li>
+						<li><a href="">FORUM </a></li>
+						<li><a href="">NEWS</a></li>
+						<li><a href="">BLOG </a></li>
+						<li><a href="">CONTACT</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+	</div>
+</body>
+</html>
